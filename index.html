@@ -15,16 +15,6 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: transparent; }
-        /* Ensure the widget fits nicely in iframe */
-        #root { width: 100%; overflow-x: hidden; }
-    </style>
-</head>
-<body>
-    <div id="root"></div>
-
-
-    <script type="text/babel">
         const App = () => {
     return (
         <div className="min-h-screen bg-zinc-50 bg-[radial-gradient(#e4e4e7_1px,transparent_1px)] [background-size:16px_16px] py-8">
@@ -59,6 +49,14 @@
         </div>
     );
 };
+        
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+
+    <script type="text/babel">
         // --- CONSTANTS & DATA ---
         const PRICING_TIERS = [
             {
@@ -248,5 +246,6 @@
     </script>
 </body>
 </html>
+
 
 
